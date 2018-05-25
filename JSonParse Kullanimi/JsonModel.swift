@@ -8,6 +8,9 @@
 
 import Foundation
 
-struct Ceviriler:Codable {
+struct Diller:Codable {
     var Eng:String
+    var Tr:String
 }
+
+
