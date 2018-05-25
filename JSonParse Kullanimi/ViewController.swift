@@ -8,17 +8,22 @@
 
 import UIKit
 
+let myUrl = "http://www.trkaynak.com/Dosyalar/kelimeListesi.php"
+let url = URL(string:myUrl)!
+let myData = try! Data(contentsOf:url)
+var jsonDecoder = JSONDecoder()
+
 class ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let ceviri = try? jsonDecoder.decode([Ceviriler].self, from: myData)
+        dump(ceviri?.first)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
 
 }
