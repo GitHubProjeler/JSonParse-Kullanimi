@@ -56,15 +56,39 @@
 		AC014EDD20B7EC9600B66AAD /* JSonParse Kullanimi */ = {
 			isa = PBXGroup;
 			children = (
+				AC454B9F20BD2E71006CC184 /* Model */,
+				AC454B9E20BD2E63006CC184 /* Controller */,
+				AC454B9D20BD2E54006CC184 /* View */,
 				AC014EDE20B7EC9600B66AAD /* AppDelegate.swift */,
-				AC014EE020B7EC9600B66AAD /* ViewController.swift */,
-				AC014EF020B7F5F600B66AAD /* JsonModel.swift */,
-				AC014EE220B7EC9600B66AAD /* Main.storyboard */,
 				AC014EE520B7EC9600B66AAD /* Assets.xcassets */,
 				AC014EE720B7EC9600B66AAD /* LaunchScreen.storyboard */,
 				AC014EEA20B7EC9600B66AAD /* Info.plist */,
 			);
 			path = "JSonParse Kullanimi";
+			sourceTree = "<group>";
+		};
+		AC454B9D20BD2E54006CC184 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC014EE220B7EC9600B66AAD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC454B9E20BD2E63006CC184 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC014EE020B7EC9600B66AAD /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC454B9F20BD2E71006CC184 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC014EF020B7F5F600B66AAD /* JsonModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
